@@ -1,0 +1,40 @@
+/* Basic background color */
+body {
+    background-color: #376c9a; /* Light blue */
+}
+
+/* Background image with full-page coverage */
+.full-background {
+    background-image: url('background.jpg');
+    background-size: cover; /* Cover entire area */
+    background-repeat: no-repeat; /* No repeat of the image */
+    background-position: center; /* Center the image */
+}
+
+/* Gradient background */
+.gradient-background {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Diagonal gradient from pink to orange */
+}
+
+/* Pattern background */
+.pattern-background {
+    background-image: url('pattern.png'); /* Uses a pattern image */
+    background-repeat: repeat; /* Repeats the image */
+}
+
+/* Transparent overlay background */
+.overlay-background {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: white; /* Text color to stand out on the overlay */
+}
+
+/* Animated background color change */
+.animated-background {
+    animation: background-color-change 5s infinite;
+}
+
+@keyframes background-color-change {
+    0% { background-color: #ff7e5f; }
+    50% { background-color: #feb47b; }
+    100% { background-color: #ff7e5f; }
+}
